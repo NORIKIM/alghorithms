@@ -6,6 +6,10 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		25EDEA112AD975B1000FDFB0 /* 월간코드챌린지시즌3-n^2배열자르기.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EDEA102AD975B1000FDFB0 /* 월간코드챌린지시즌3-n^2배열자르기.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		25EDE9C52AD14FAF000FDFB0 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -22,6 +26,7 @@
 		25EDE9C72AD14FAF000FDFB0 /* algorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = algorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		25EDE9D22AD15016000FDFB0 /* 완전탐색-카펫.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "완전탐색-카펫.swift"; sourceTree = "<group>"; };
 		25EDE9F72AD6ACE7000FDFB0 /* 월간코드챌린지시즌2-괄호회전하기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "월간코드챌린지시즌2-괄호회전하기.swift"; sourceTree = "<group>"; };
+		25EDEA102AD975B1000FDFB0 /* 월간코드챌린지시즌3-n^2배열자르기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "월간코드챌린지시즌3-n^2배열자르기.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +69,7 @@
 			children = (
 				25EDE9D22AD15016000FDFB0 /* 완전탐색-카펫.swift */,
 				25EDE9F72AD6ACE7000FDFB0 /* 월간코드챌린지시즌2-괄호회전하기.swift */,
+				25EDEA102AD975B1000FDFB0 /* 월간코드챌린지시즌3-n^2배열자르기.swift */,
 			);
 			path = Programmers;
 			sourceTree = "<group>";
@@ -100,6 +106,7 @@
 				TargetAttributes = {
 					25EDE9C62AD14FAF000FDFB0 = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -126,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25EDEA112AD975B1000FDFB0 /* 월간코드챌린지시즌3-n^2배열자르기.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,10 +256,12 @@
 		25EDE9CF2AD14FAF000FDFB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GQF9DRKKG2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -259,6 +269,7 @@
 		25EDE9D02AD14FAF000FDFB0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GQF9DRKKG2;
 				ENABLE_HARDENED_RUNTIME = YES;
