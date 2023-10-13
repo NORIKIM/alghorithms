@@ -39,7 +39,7 @@ func solution(_ s:String) -> Int {
 }
 
 // 2차
-func solution(_ s:String) -> Int {
+func solution2(_ s:String) -> Int {
     var brackets = s
     var s = s
     var count = 0
