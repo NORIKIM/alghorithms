@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  월간 코드 챌린지 시즌3 - n^2 배열 자르기.swift
 //  algorithms
 //
 //  Created by 김지나 on 2023/10/13.
