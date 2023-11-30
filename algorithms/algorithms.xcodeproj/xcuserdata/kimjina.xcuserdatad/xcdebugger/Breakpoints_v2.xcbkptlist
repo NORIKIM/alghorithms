@@ -3,4 +3,54 @@
    uuid = "DC91CB55-A7E9-4B71-BB2B-9AC751DBF095"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3211979C-AEB6-4B02-BD9A-11737B60A576"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "algorithms/Programmers/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "solution(_:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "3211979C-AEB6-4B02-BD9A-11737B60A576 - 16c7e909f297ad17"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "algorithms.solution(Swift.Array&lt;Swift.Array&lt;Swift.Int&gt;&gt;) -&gt; Swift.Int"
+                  moduleName = "algorithms"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kimjina/Desktop/Github/alghorithms/algorithms/algorithms/Programmers/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "1064">
+               </Location>
+               <Location
+                  uuid = "3211979C-AEB6-4B02-BD9A-11737B60A576 - e2d15491754623f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Set&lt;Swift.Int&gt;) -&gt; Swift.Bool in algorithms.solution(Swift.Array&lt;Swift.Array&lt;Swift.Int&gt;&gt;) -&gt; Swift.Int"
+                  moduleName = "algorithms"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kimjina/Desktop/Github/alghorithms/algorithms/algorithms/Programmers/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
