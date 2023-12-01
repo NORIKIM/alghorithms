@@ -7,61 +7,61 @@
 
 import Foundation
 
-// https://0urtrees.tistory.com/377
-func solution(_ maps: [String]) -> [Int] {
-    // maps의 각 요소를 2차원 character 배열로 하나씩 분리
-    let graph = maps.reduce(into: [[Character]]()) { result, map in
-        result.append(Array(map))
+// https://clamp-coding.tistory.com/263
+func solution(_ maps:[String]) -> [Int] {
+    //지도를 저장할 배열
+    var map = [[Character]]()
+    for i in maps{
+        map.append(Array(i))
     }
-    let row = graph.count // 가로
-    let col = graph[0].count // 세로
-    let dx = [0, 0, 1, -1] // 좌우로 움직일 방향
-    let dy = [-1, 1, 0, 0] // 상하로 움직일 방향
-    var queue = [[Bool]](repeating: [Bool](repeating: false, count: col), count: row)
     
-    func dfs(_ x: Int, _ y: Int) -> Int {
-        var sum = Int(graph[x][y].asciiValue!) - 48
+    //행의 최대 idx
+    let x_max = map.count - 1
+    //열의 최대 idx
+    let y_max = map[0].count - 1
+    
+    //dfs를 사용하기 위해 사용할 visited 배열
+    var visited = [[Bool]](repeating: Array(repeating: false, count: y_max + 1 ), count: x_max + 1 )
+    
+    func dfs(_ x: Int, _ y: Int) -> Int{
         
-        if graph[x][y] == "X" {
+        //인덱스의 범위를 넘어가면 0리턴
+        if x < 0 || y < 0 || x > x_max || y > y_max {
+            return 0
+        }
+        //방문한적 있다면 0리턴
+        if visited[x][y] == true{
+            return 0
+        }
+        //X라면 방문처리하고 리턴
+        if map[x][y] == "X"{
+            visited[x][y] = true
             return 0
         }
         
-        queue[x][y] = true
-        
-        for i in dx.indices {
-            let nx = x + dx[i]
-            let ny = y + dy[i]
-            
-            // 범위 체크
-            if nx >= row || nx < 0 || ny >= col || ny < 0 {
-                continue
-            }
-            if queue[nx][ny] {
-                continue
-            }
-            
-            queue[nx][ny] = true
-        }
-        
-        return 0
+        //이외 숫자로 이루어지고 방문안한노드라면 방문처리를 하고 더한다.
+        visited[x][y] = true
+        var tmp = Int(String(map[x][y]))!
+        // 상 하 좌 우로만 움직여야 하기 때문에
+        return tmp + dfs(x, y+1) + dfs(x, y - 1) + dfs(x + 1, y) + dfs(x - 1, y)
     }
+   
+    var result = [Int]()
     
-    var ans = [Int]()
-    
-    for i in 0 ..< row {
-        for j in 0 ..< col {
-            if queue[i][j] || graph[i][j] == "X" {
-                continue
-            }
-            
-            let sum = dfs(i, j)
-            if sum > 0 {
-                ans.append(sum)
+    //각 요소를 순환하며 연결된 섬을 모두 살펴본다
+    for i in 0...x_max{
+        for j in 0...y_max{
+            var a = dfs(i, j)
+            if a > 0{
+                result.append(a)
             }
         }
     }
     
-    return ans.isEmpty ? [-1] : ans.sorted()
+    
+    //비었다면 -1 아니라면 오름차순 정렬
+    return result == [] ? [-1] : result.sorted(by: <)
+    
 }
 
 
