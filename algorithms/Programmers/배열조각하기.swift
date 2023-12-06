@@ -43,4 +43,4 @@ func solution(_ arr:[Int], _ query:[Int]) -> [Int] {
     return Array(arr[first...last])
 }
 
-solution([1,2,3,4,5,6,7,8], [5,2])
+//solution([1,2,3,4,5,6,7,8], [5,2])
