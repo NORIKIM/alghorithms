@@ -23,4 +23,4 @@ func solution(_ A:[Int], _ B:[Int]) -> Int {
     return answer
 }
 
-solution([1,4,2], [5,4,4])
+//solution([1,4,2], [5,4,4])
