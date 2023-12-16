@@ -15,9 +15,10 @@ func solution(_ n:Int) -> Int {
     }
     
     for _ in 3 ... n {
-        pibo.append(pibo[pibo.count - 1] + pibo[pibo.count - 2])
+        let num = pibo[pibo.count - 1] + pibo[pibo.count - 2]
+        pibo.append(num % 1234567)
     }
     
-    return pibo.last!
+    return pibo[n - 1]
 }
 
