@@ -1,8 +1,8 @@
 //
-//  main.swift
+//  코드처리하기.swift
 //  algorithms
 //
-//  Created by 김지나 on 2023/12/07.
+//  Created by 김지나 on 2023/12/20.
 //
 
 import Foundation
@@ -11,7 +11,7 @@ func solution(_ code:String) -> String {
     var ret = ""
     let code = code.map{String($0)}
     var mode = 0
-    
+
     for idx in 0 ..< code.count {
         if mode == 0 {
             if code[idx] == "1" {
@@ -22,7 +22,7 @@ func solution(_ code:String) -> String {
                 }
             }
         }
-        
+
         else {
             if code[idx] == "1" {
                 mode = 0
@@ -32,10 +32,8 @@ func solution(_ code:String) -> String {
                 }
             }
         }
-        
+
     }
-    
+
     return ret != "" ? ret : "EMPTY"
 }
-
-//print(solution("abc1abc1abc"))

@@ -1,15 +1,15 @@
 //
-//  main.swift
+//  배열만들기2.swift
 //  algorithms
 //
-//  Created by 김지나 on 2023/12/11.
+//  Created by 김지나 on 2023/12/20.
 //
 
 import Foundation
 
 func solution(_ l:Int, _ r:Int) -> [Int] {
     var result = [Int]()
-    
+
     for i in l ... r {
         if i % 5 == 0 {
             var iString = String(i).replacingOccurrences(of: "0", with: "")
@@ -19,6 +19,6 @@ func solution(_ l:Int, _ r:Int) -> [Int] {
             }
         }
     }
-    
+
     return result.isEmpty ? [-1] : result
 }

@@ -1,22 +1,21 @@
 //
-//  main.swift
+//  옹알이2.swift
 //  algorithms
 //
-//  Created by 김지나 on 2023/12/15.
+//  Created by 김지나 on 2023/12/20.
 //
 
 import Foundation
-
 
 func counting(_ word: String) -> Bool {
     let babbling = ["aya", "ye", "woo", "ma"]
     var result = ""
     var lastWord = ""
     let words = word.map { String($0) }
-    
+
     for i in words {
         result += i
-        
+
         // 현재까지의 단어가 발음 가능한 단어에 포함되어있는지 확인
         // lastword에 없는 단어인지 확인
         if babbling.contains(result) && result != lastWord {
@@ -27,7 +26,7 @@ func counting(_ word: String) -> Bool {
         }
 
     }
-    
+
     return result.isEmpty
 }
 
