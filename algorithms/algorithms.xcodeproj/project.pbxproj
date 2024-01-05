@@ -6,6 +6,10 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2596A1FE2B47F0200065E21F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2596A1FC2B47EDE10065E21F /* main.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		25EDE9C52AD14FAF000FDFB0 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -23,6 +27,7 @@
 		258D69D62B441EB900FA01B1 /* NQueen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NQueen.swift; sourceTree = "<group>"; };
 		258D69DA2B45393000FA01B1 /* 배열의 평균값.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "배열의 평균값.swift"; sourceTree = "<group>"; };
 		2596A1FB2B47ED110065E21F /* 문자열 뒤의 n 글자.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "문자열 뒤의 n 글자.swift"; sourceTree = "<group>"; };
+		2596A1FC2B47EDE10065E21F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		25C0D8B42B15E0D200DC0C2F /* 직사각형넓이구하기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "직사각형넓이구하기.swift"; sourceTree = "<group>"; };
 		25C0D8B62B17105800DC0C2F /* 베스트앨범.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "베스트앨범.swift"; sourceTree = "<group>"; };
 		25C0D8B92B1847F800DC0C2F /* 겹치는선분의길이.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "겹치는선분의길이.swift"; sourceTree = "<group>"; };
@@ -78,6 +83,7 @@
 		25EDE9BE2AD14FAF000FDFB0 = {
 			isa = PBXGroup;
 			children = (
+				2596A1FC2B47EDE10065E21F /* main.swift */,
 				25C0D8DE2B1EF42D00DC0C2F /* Baekjoon */,
 				25EDE9D12AD14FE9000FDFB0 /* Programmers */,
 				25EDE9C82AD14FAF000FDFB0 /* Products */,
@@ -185,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2596A1FE2B47F0200065E21F /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
