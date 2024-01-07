@@ -85,7 +85,6 @@
 		25EDE9BE2AD14FAF000FDFB0 = {
 			isa = PBXGroup;
 			children = (
-				2596A2032B4AD3AD0065E21F /* main.swift */,
 				25C0D8DE2B1EF42D00DC0C2F /* Baekjoon */,
 				25EDE9D12AD14FE9000FDFB0 /* Programmers */,
 				25EDE9C82AD14FAF000FDFB0 /* Products */,
@@ -103,6 +102,7 @@
 		25EDE9D12AD14FE9000FDFB0 /* Programmers */ = {
 			isa = PBXGroup;
 			children = (
+				2596A2032B4AD3AD0065E21F /* main.swift */,
 				2596A2012B482CE20065E21F /* 카드뭉치.swift */,
 				2596A1FC2B47EDE10065E21F /* 최댓값과 최솟값.swift */,
 				258D69D32B43D61D00FA01B1 /* 둘만의 암호.swift */,
