@@ -1,8 +1,8 @@
 //
-//  main.swift
+//  주사위게임3.swift
 //  algorithms
 //
-//  Created by 김지나 on 2023/12/07.
+//  Created by 인터웍스_맥북 on 1/19/24.
 //
 
 import Foundation
@@ -38,5 +38,3 @@ func solution(_ a:Int, _ b:Int, _ c:Int, _ d:Int) -> Int {
   
     return 0
 }
-
-//print(solution(1,1,5,5))

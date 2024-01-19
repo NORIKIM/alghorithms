@@ -1,8 +1,8 @@
 //
-//  main.swift
+//  최대값과 최솟값.swift
 //  algorithms
 //
-//  Created by 김지나 on 2024/01/05.
+//  Created by 인터웍스_맥북 on 1/19/24.
 //
 
 import Foundation

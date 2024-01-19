@@ -1,13 +1,12 @@
 //
 //  x만큼 간격이 있는 n개의 숫자.swift
-//  temp
+//  algorithms
 //
-//  Created by 김지나 on 2024/01/11.
+//  Created by 인터웍스_맥북 on 1/19/24.
 //
 
 import Foundation
 
-// https://school.programmers.co.kr/learn/courses/30/lessons/12954
 func solution(_ x:Int, _ n:Int) -> [Int64] {
     var result = [x]
     
